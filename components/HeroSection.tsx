@@ -10,10 +10,10 @@ export default function HeroSection() {
           src="/images/van-blue-night.jpg"
           alt="Professional drain cleaning service van"
           fill
-          className="object-cover opacity-40"
+          className="object-cover opacity-70"
           priority
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-white via-white/80 to-transparent"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-white via-white/60 to-transparent"></div>
       </div>
 
       {/* Content */}
