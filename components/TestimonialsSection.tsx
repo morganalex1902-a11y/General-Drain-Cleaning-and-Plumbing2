@@ -30,10 +30,10 @@ export default function TestimonialsSection() {
           <div className="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 rounded-full border border-primary/20 animate-fadeInUp">
             <span className="text-sm font-bold">Client Reviews</span>
           </div>
-          <h2 className="text-4xl lg:text-5xl font-black text-secondary animate-fadeInUp [animation-delay:0.1s] opacity-0 [animation-fill-mode:both]">
+          <h2 className="text-4xl lg:text-5xl font-black text-secondary animate-fadeInUp" style={{ animationDelay: "0.1s" }}>
             What Our Customers Say
           </h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto animate-fadeInUp [animation-delay:0.2s] opacity-0 [animation-fill-mode:both]">
+          <p className="text-lg text-gray-600 max-w-2xl mx-auto animate-fadeInUp" style={{ animationDelay: "0.2s" }}>
             Thousands of satisfied customers throughout Philadelphia and surrounding areas.
           </p>
         </div>
@@ -43,7 +43,7 @@ export default function TestimonialsSection() {
           {testimonials.map((testimonial, idx) => (
             <div
               key={idx}
-              className="bg-gray-50 rounded-xl p-8 border border-gray-200 hover:border-primary hover:shadow-xl transition-all duration-300 transform hover:scale-105 hover:-translate-y-2 animate-fadeInUp opacity-0 [animation-fill-mode:both]"
+              className="bg-gray-50 rounded-xl p-8 border border-gray-200 hover:border-primary hover:shadow-xl transition-all duration-300 transform hover:scale-105 hover:-translate-y-2 animate-fadeInUp"
               style={{ animationDelay: `${0.3 + idx * 0.1}s` }}
             >
               {/* Stars */}

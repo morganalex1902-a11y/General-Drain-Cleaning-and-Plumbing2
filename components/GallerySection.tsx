@@ -47,10 +47,10 @@ export default function GallerySection() {
           <div className="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 rounded-full border border-primary/20 animate-fadeInUp">
             <span className="text-sm font-bold">Our Work</span>
           </div>
-          <h2 className="text-4xl lg:text-5xl font-black text-secondary animate-fadeInUp [animation-delay:0.1s] opacity-0 [animation-fill-mode:both]">
+          <h2 className="text-4xl lg:text-5xl font-black text-secondary animate-fadeInUp" style={{ animationDelay: "0.1s" }}>
             Quality Work in Action
           </h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto animate-fadeInUp [animation-delay:0.2s] opacity-0 [animation-fill-mode:both]">
+          <p className="text-lg text-gray-600 max-w-2xl mx-auto animate-fadeInUp" style={{ animationDelay: "0.2s" }}>
             See examples of our professional plumbing services and installations.
           </p>
         </div>
@@ -60,7 +60,7 @@ export default function GallerySection() {
           {galleryImages.map((image, idx) => (
             <div
               key={idx}
-              className={`${image.span} relative rounded-xl overflow-hidden group cursor-pointer animate-scaleIn opacity-0 [animation-fill-mode:both]`}
+              className={`${image.span} relative rounded-xl overflow-hidden group cursor-pointer animate-scaleIn`}
               style={{ animationDelay: `${0.1 + idx * 0.05}s` }}
             >
               <Image
