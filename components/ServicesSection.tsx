@@ -42,13 +42,13 @@ export default function ServicesSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-20 space-y-4">
-          <div className="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 rounded-full border border-primary/20">
+          <div className="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 rounded-full border border-primary/20 animate-fadeInUp">
             <span className="text-sm font-bold">Professional Services</span>
           </div>
-          <h2 className="text-4xl lg:text-5xl font-black text-secondary">
+          <h2 className="text-4xl lg:text-5xl font-black text-secondary animate-fadeInUp [animation-delay:0.1s] opacity-0 [animation-fill-mode:both]">
             Comprehensive Plumbing Solutions
           </h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+          <p className="text-lg text-gray-600 max-w-2xl mx-auto animate-fadeInUp [animation-delay:0.2s] opacity-0 [animation-fill-mode:both]">
             From routine maintenance to emergency repairs, we provide expert solutions for all your plumbing needs.
           </p>
         </div>
@@ -60,7 +60,8 @@ export default function ServicesSection() {
             return (
               <div
                 key={service.id}
-                className="group bg-gray-50 rounded-xl overflow-hidden hover:shadow-xl transition-all duration-300"
+                className="group bg-gray-50 rounded-xl overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:scale-105 hover:-translate-y-2 animate-fadeInUp opacity-0 [animation-fill-mode:both]"
+                style={{ animationDelay: `${0.3 + service.id * 0.1}s` }}
               >
                 <div className="grid grid-cols-1 sm:grid-cols-5 h-full">
                   {/* Image */}

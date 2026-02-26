@@ -21,33 +21,33 @@ export default function HeroSection() {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-8">
             {/* Badge */}
-            <div className="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 rounded-full border border-primary/20">
+            <div className="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 rounded-full border border-primary/20 animate-fadeInUp [animation-delay:0.1s] opacity-0 [animation-fill-mode:both]">
               <Clock size={16} />
               <span className="text-sm font-bold">24/7 Emergency Services</span>
             </div>
 
             {/* Heading */}
             <div className="space-y-4">
-              <h1 className="text-5xl lg:text-6xl font-black text-secondary leading-tight">
+              <h1 className="text-5xl lg:text-6xl font-black text-secondary leading-tight animate-fadeInUp [animation-delay:0.2s] opacity-0 [animation-fill-mode:both]">
                 Professional Drain Cleaning & <span className="text-primary">Plumbing</span> Solutions
               </h1>
-              <p className="text-lg text-gray-600 leading-relaxed max-w-lg">
+              <p className="text-lg text-gray-600 leading-relaxed max-w-lg animate-fadeInUp [animation-delay:0.3s] opacity-0 [animation-fill-mode:both]">
                 Trusted by thousands of Philadelphia homeowners and businesses. Fast, reliable, and professional service when you need it most. Serving the region for years with certified technicians.
               </p>
             </div>
 
             {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4">
+            <div className="flex flex-col sm:flex-row gap-4 animate-fadeInUp [animation-delay:0.4s] opacity-0 [animation-fill-mode:both]">
               <a
                 href="#contact"
-                className="inline-flex items-center justify-center gap-2 bg-primary text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-opacity-90 transition-all shadow-lg hover:shadow-xl"
+                className="inline-flex items-center justify-center gap-2 bg-primary text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-opacity-90 hover:shadow-2xl transition-all shadow-lg duration-300 transform hover:scale-105"
               >
                 <span>Get Help Now</span>
-                <ArrowRight size={20} />
+                <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
               </a>
               <a
                 href="tel:215-917-6718"
-                className="inline-flex items-center justify-center gap-2 border-2 border-secondary text-secondary bg-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-secondary hover:text-white transition-all"
+                className="inline-flex items-center justify-center gap-2 border-2 border-secondary text-secondary bg-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-secondary hover:text-white transition-all duration-300 transform hover:scale-105"
               >
                 <Phone size={20} />
                 <span>Call Now</span>
@@ -55,7 +55,7 @@ export default function HeroSection() {
             </div>
 
             {/* Trust Indicators */}
-            <div className="grid grid-cols-3 gap-6 pt-8 border-t border-gray-300">
+            <div className="grid grid-cols-3 gap-6 pt-8 border-t border-gray-300 animate-fadeInUp [animation-delay:0.5s] opacity-0 [animation-fill-mode:both]">
               <div>
                 <div className="text-3xl font-black text-primary">24/7</div>
                 <div className="text-sm text-gray-600">Emergency Service</div>

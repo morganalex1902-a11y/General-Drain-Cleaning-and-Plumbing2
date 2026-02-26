@@ -54,13 +54,13 @@ export default function ContactSection() {
           {/* Contact Info */}
           <div className="space-y-8">
             <div className="space-y-4">
-              <div className="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 rounded-full border border-primary/20">
+              <div className="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 rounded-full border border-primary/20 animate-fadeInUp">
                 <span className="text-sm font-bold">Get In Touch</span>
               </div>
-              <h2 className="text-4xl lg:text-5xl font-black text-secondary">
+              <h2 className="text-4xl lg:text-5xl font-black text-secondary animate-fadeInUp [animation-delay:0.1s] opacity-0 [animation-fill-mode:both]">
                 Contact Our Team
               </h2>
-              <p className="text-lg text-gray-600">
+              <p className="text-lg text-gray-600 animate-fadeInUp [animation-delay:0.2s] opacity-0 [animation-fill-mode:both]">
                 Need immediate assistance? Call us anytime. We're here to help with all your plumbing needs.
               </p>
             </div>
@@ -128,8 +128,8 @@ export default function ContactSection() {
           </div>
 
           {/* Contact Form */}
-          <div>
-            <div className="bg-white rounded-xl shadow-lg p-8 border border-gray-200">
+          <div className="animate-fadeInUp [animation-delay:0.3s] opacity-0 [animation-fill-mode:both]">
+            <div className="bg-white rounded-xl shadow-lg p-8 border border-gray-200 hover:shadow-2xl transition-shadow duration-300">
               <h3 className="text-2xl font-black text-secondary mb-6">Send us a Message</h3>
 
               {submitted && (
