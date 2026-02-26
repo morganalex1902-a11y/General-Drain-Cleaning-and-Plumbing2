@@ -62,9 +62,9 @@ export default function ServicesSection() {
                 key={service.id}
                 className="group bg-gray-50 rounded-xl overflow-hidden hover:shadow-xl transition-all duration-300"
               >
-                <div className="grid sm:grid-cols-5 h-full">
+                <div className="grid grid-cols-1 sm:grid-cols-5 h-full">
                   {/* Image */}
-                  <div className="sm:col-span-2 relative overflow-hidden bg-gray-200">
+                  <div className="sm:col-span-2 relative overflow-hidden bg-gray-200 h-[250px] sm:h-auto">
                     <Image
                       src={service.image}
                       alt={service.title}

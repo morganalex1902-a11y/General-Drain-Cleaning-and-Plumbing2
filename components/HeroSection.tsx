@@ -3,7 +3,7 @@ import { ArrowRight, Phone, Clock } from 'lucide-react';
 
 export default function HeroSection() {
   return (
-    <section className="relative h-screen min-h-[600px] flex items-center pt-20 overflow-hidden bg-gradient-to-br from-slate-50 to-gray-100">
+    <section className="relative min-h-screen flex items-center pt-32 pb-12 overflow-hidden bg-gradient-to-br from-slate-50 to-gray-100">
       {/* Background Image Overlay */}
       <div className="absolute inset-0 z-0">
         <Image

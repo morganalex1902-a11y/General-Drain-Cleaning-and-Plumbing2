@@ -8,17 +8,18 @@ export default function FooterSection() {
       {/* Emergency Banner */}
       <div className="bg-primary border-b border-primary/50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
-          <div className="flex items-center justify-between flex-wrap gap-4">
+          <div className="flex flex-col sm:flex-row items-center sm:justify-between gap-4">
             <div>
-              <h3 className="font-black text-lg">24/7 Emergency Drain Services</h3>
-              <p className="text-sm text-red-100">When you need us most, we're here for you</p>
+              <h3 className="font-black text-lg text-center sm:text-left">24/7 Emergency Drain Services</h3>
+              <p className="text-sm text-red-100 text-center sm:text-left">When you need us most, we're here for you</p>
             </div>
             <a
               href="tel:267-788-2851"
-              className="inline-flex items-center gap-2 bg-white text-primary px-6 py-2 rounded-lg font-bold hover:bg-opacity-90 transition-all"
+              className="inline-flex items-center gap-2 bg-white text-primary px-6 py-2 rounded-lg font-bold hover:bg-opacity-90 transition-all whitespace-nowrap"
             >
               <Phone size={18} />
-              Call Now: (267) 788-2851
+              <span className="hidden sm:inline">Call Now: (267) 788-2851</span>
+              <span className="sm:hidden">Call Now</span>
             </a>
           </div>
         </div>
@@ -26,7 +27,7 @@ export default function FooterSection() {
 
       {/* Main Footer */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="grid md:grid-cols-4 gap-12 mb-12">
+        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-8 sm:gap-12 mb-12">
           {/* Company Info */}
           <div className="space-y-4">
             <div className="space-y-2">
@@ -108,7 +109,7 @@ export default function FooterSection() {
 
         {/* Divider */}
         <div className="border-t border-blue-700 py-8">
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8">
             {/* Trust Badges */}
             <div className="space-y-2 text-sm text-blue-100">
               <div className="font-bold text-white">Licensed & Insured</div>
