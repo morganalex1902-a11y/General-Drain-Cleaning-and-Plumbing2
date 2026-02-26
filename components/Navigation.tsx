@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { Menu, X, Phone } from 'lucide-react';
 
 export default function Navigation() {
@@ -20,9 +21,14 @@ export default function Navigation() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
-          <Link href="#" className="flex flex-col items-start">
-            <div className="text-2xl font-black text-primary">GENERAL</div>
-            <div className="text-xs font-bold text-secondary tracking-widest">DRAIN CLEANING</div>
+          <Link href="#" className="flex items-center">
+            <Image
+              src="https://cdn.builder.io/api/v1/image/assets%2F4190207b58b5435387c7048034219577%2F97178e9b9d0f4d519f15cf39a15765d0?format=webp&width=800&height=1200"
+              alt="4-Inch Drain Snaking Service"
+              width={80}
+              height={120}
+              className="h-16 w-auto"
+            />
           </Link>
 
           {/* Desktop Menu */}
